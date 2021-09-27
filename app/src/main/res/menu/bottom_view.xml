@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/dailyView"
+        android:icon="@drawable/calendar"
+        android:title="@string/daily_expense"
+app:showAsAction="withText"
+
+        />
+    <item
+        android:id="@+id/addExpense"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="@string/add_expense"
+        app:showAsAction="withText"
+
+        />
+
+    <item
+        android:id="@+id/monthlyView"
+        android:icon="@drawable/ic_baseline_monthly"
+        android:title="@string/monthly_expense"
+        app:showAsAction="withText"
+
+
+        />
+</menu>

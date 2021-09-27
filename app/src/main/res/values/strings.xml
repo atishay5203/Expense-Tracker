@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Expense-Tracker</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_transaction">Delete Transaction</string>
+    <string name="edit_transaction">Edit Transaction</string>
+    <string name="transaction_title">Transaction Title*</string>
+    <string name="transaction_amount">Transaction Amount*</string>
+    <string name="select_date">Select Date*</string>
+    <string name="recurring_transaction">RECURRING TRANSACTION</string>
+
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="transaction_type_image">Transaction Type Image*</string>
+    <string name="transaction_category_image">Transaction Category Image</string>
+    <string name="transaction_details">Transaction Details</string>
+
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="select_category">Select Category</string>
+    <string name="item_1">Item 1</string>
+    <string name="date">27 August 2021</string>
+    <string name="_100">100</string>
+    <string name="plus">+</string>
+    <string name="cash">Cash</string>
+    <string name="august">August</string>
+    <string name="year">2021</string>
+    <string name="view_all">VIEW ALL</string>
+    <string name="budget_exceeded">BUDGET EXCEEDED</string>
+    <string name="daily_expense">Daily Expense</string>
+    <string name="view_daily_expense_list">View Daily Expense List</string>
+    <string name="monthly_expense">Monthly Expenses</string>
+    <string name="view_monthly_expenses">View Monthly Expenses</string>
+    <string name="add_expense">Add Expense</string>
+
+    <string name="net_balance">NET BALANCE</string>
+    <string name="_35000_00">35000.00</string>
+    <string name="credit">Credit</string>
+    <string name="debit">Debit</string>
+    <string name="upcoming_transactions">Upcoming Transactions</string>
+
+    <string name="_15000_00">15000.00</string>
+    <string name="amount_saved">AMOUNT SAVED</string>
+    <string name="_25000_00">25000.00</string>
+    <string name="transactions_this_month">Transactions This Month</string>
+    <string name="amount_spent">AMOUNT SPENT</string>
+    <string name="user_s_profile">USER PROFILE</string>
+    <string name="user_name">USER NAME*</string>
+    <string name="monthly_budget">MONTHLY BUDGET*</string>
+    <string name="monthly_income">INCOME*</string>
+    <string name="save_details">SAVE DETAILS</string>
+    <string name="continues">CONTINUE</string>
+    <string name="set_up">SET UP YOUR BUDGET</string>
+    <string name="welcome_to_the_app">WELCOME TO THE APP!</string>
+    <string name="transactions_on_this_day">Transactions On this Day</string>
+    <string name="august_3_2021">August 3,2021</string>
+    <string name="_500">+500</string>
+    <string name="__500">-500</string>
+    <string name="mark_as_complete">Mark As Complete</string>
+    <string name="comp_msg">Transaction Marked as Completed</string>
+    <string name="transaction_saved_succesfully">Transaction Saved Succesfully</string>
+    <string name="co">Transaction Completed</string>
+    <string name="missed_transactions">Missed Transactions</string>
+    <string name="rt">0.00</string>
+
+
+</resources>

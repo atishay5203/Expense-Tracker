@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/setUpProfileFragment"
+        android:name="com.example.expense_tracker.ProfileViewAndSetup.SetUpProfileFragment"
+        android:label="fragment_set_up_profile"
+        tools:layout="@layout/fragment_set_up_profile" >
+        <action
+            android:id="@+id/action_setUpProfileFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+        <action
+            android:id="@+id/action_setUpProfileFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="com.example.expense_tracker.TransactionList.TransactionListFragment"
+        android:label="fragment_transaction_list"
+        tools:layout="@layout/fragment_transaction_list" >
+        <action
+            android:id="@+id/action_transactionListFragment_to_transaction_detail"
+            app:destination="@id/transaction_detail" />
+        <action
+            android:id="@+id/action_transactionListFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_transactionListFragment_to_monthlyListFragment"
+            app:destination="@id/monthlyListFragment" />
+        <action
+            android:id="@+id/action_transactionListFragment_to_calendarViewFragment"
+            app:destination="@id/calendarViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transaction_detail"
+        android:name="com.example.expense_tracker.TransactionDetail.TransactionDetailFragment"
+        android:label="fragment_transaction_detail"
+        tools:layout="@layout/fragment_transaction_detail" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_transaction_detail_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.expense_tracker.ProfileViewAndSetup.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthlyListFragment"
+        android:name="com.example.expense_tracker.MonthlyList.MonthlyListFragment"
+        android:label="fragment_monthly_list"
+        tools:layout="@layout/fragment_monthly_list" >
+        <action
+            android:id="@+id/action_monthlyListFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_monthlyListFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+        <action
+            android:id="@+id/action_monthlyListFragment_to_transaction_detail"
+            app:destination="@id/transaction_detail" />
+        <action
+            android:id="@+id/action_monthlyListFragment_to_calendarViewFragment"
+            app:destination="@id/calendarViewFragment" />
+        <action
+            android:id="@+id/action_monthlyListFragment_to_monthlyDetailFragment"
+            app:destination="@id/monthlyDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarViewFragment"
+        android:name="com.example.expense_tracker.CalendarView.CalendarViewFragment"
+        android:label="fragment_calendar_view"
+        tools:layout="@layout/fragment_calendar_view" >
+        <action
+            android:id="@+id/action_calendarViewFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+        <action
+            android:id="@+id/action_calendarViewFragment_to_transaction_detail"
+            app:destination="@id/transaction_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthlyDetailFragment"
+        android:name="com.example.expense_tracker.MonthlyDetail.MonthlyDetailFragment"
+        android:label="fragment_monthly_detail"
+        tools:layout="@layout/fragment_monthly_detail" >
+        <argument
+            android:name="monthYear"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_monthlyDetailFragment_to_transaction_detail"
+            app:destination="@id/transaction_detail" />
+        <action
+            android:id="@+id/action_monthlyDetailFragment_to_monthlyListFragment"
+            app:destination="@id/monthlyListFragment" />
+        <action
+            android:id="@+id/action_monthlyDetailFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.expense_tracker.ProfileViewAndSetup.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_setUpProfileFragment"
+            app:destination="@id/setUpProfileFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+    </fragment>
+</navigation>

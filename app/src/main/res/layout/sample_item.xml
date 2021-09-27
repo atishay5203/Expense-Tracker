@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:padding="0dp">
+
+
+        <View
+            android:id="@+id/increment_view"
+            android:layout_width="5dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+
+            android:layout_marginLeft="4dp"
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="@+id/date_sample"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </View>
+
+        <TextView
+            android:id="@+id/name_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/item_1"
+            android:textColor="#070707"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/increment_view"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/date_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/date"
+            android:textColor="#070707"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/increment_view"
+            app:layout_constraintTop_toBottomOf="@id/name_sample">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/amount_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:text="@string/_100"
+            android:textColor="@color/darkgreen"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.38">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/plus_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            android:textColor="@color/darkgreen"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/amount_sample"
+            app:layout_constraintEnd_toStartOf="@+id/amount_sample"
+            app:layout_constraintTop_toTopOf="@id/amount_sample">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/type_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/cash"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/date_sample"
+            app:layout_constraintEnd_toStartOf="@id/plus_minus"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toEndOf="@id/date_sample"
+            app:layout_constraintTop_toTopOf="@+id/date_sample">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/arrow"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/ic_baseline_arrow_right_24"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/amount_sample"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
